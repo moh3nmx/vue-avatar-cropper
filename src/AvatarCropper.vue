@@ -107,8 +107,8 @@ export default {
       type: Object,
       default() {
         return {
-          submit: '提交',
-          cancel: '取消'
+          submit: 'Done',
+          cancel: 'Cancel'
         }
       }
     }
@@ -262,12 +262,15 @@ export default {
   .avatar-cropper-container {
     background: #fff;
     z-index: 999;
-    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.14);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+
 
     .avatar-cropper-image-container {
       position: relative;
       max-width: 400px;
       height: 300px;
+      border-radius: 6px;
     }
     img {
       max-width: 100%;
@@ -287,8 +290,10 @@ export default {
         border: none;
         background: transparent;
         outline: none;
+        color: #673AB7;
+        transition-duration: 0.5s;
         &:hover {
-          background-color: #2aabd2;
+          background-color: #673AB7;
           color: #fff;
         }
       }
